@@ -1,0 +1,16 @@
+func exprOne(a)
+	a = (a);
+end
+
+func exprTwo(a, b)
+	a = add(a, 1);
+	b = add(add(b, 1), a)
+end
+
+func exprThree(a)
+	a = div(add(minus(mult(10, a), 1), 6), 3);
+end
+
+func exprFour(a, b)
+	a = min(min(add(a, 1), b), mult(a, 5));
+end

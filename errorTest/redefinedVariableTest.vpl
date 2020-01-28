@@ -1,0 +1,4 @@
+func redefinedVariableTest(a, b)
+	var c,c; 
+end
+

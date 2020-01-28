@@ -1,0 +1,64 @@
+func ifOne(a)
+	if a < 10 then
+		a = 4;
+	endif
+end
+
+func ifTwo(a)
+	if a >= 10 then
+		a = 5;
+	endif
+end
+
+func ifThree(a)
+	if a >= 10 then
+		a = 4;
+		if a < 20 then
+			a = 3;
+		endif
+	endif
+end
+
+func ifFour(a)
+	if a >= 10 then
+		if min(a, 1) < 20 then
+			if a >= 15 then
+				a = 3;
+			endif
+		endif
+	endif
+end
+
+func ifFive(a)
+	if a >= 10 then
+		if min(a, 1) < 20 then
+			if a >= 15 then
+				a = 3;
+			endif
+		endif
+	endif ;
+	if add(a, 5) >= 10 then
+		a = 1;
+	endif
+end
+
+func ifSix(a, b)
+	if mult(a, 2) >= 10 then
+		a = 5;
+	endif;
+  	if div(b, 10) < 20 then
+    	b = 10;
+  	endif
+end
+
+func ifSeven(a, b)
+	if mult(a, b) < 100 then
+		a = add(a, 1);
+		b = add(b, 5);
+	endif
+end
+
+func ifEight(a)
+	if 1 < 2 then
+	endif
+end

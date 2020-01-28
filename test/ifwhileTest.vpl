@@ -1,0 +1,17 @@
+func ifwhileOne(a, b)
+    if a >= 7 then 
+        while a >= 2 do
+            a = minus(a, 1);
+			b = minus(b, 1);
+	    endwhile
+    endif
+end
+
+func ifwhileTwo(a, b)
+    while b < 13 do
+        if a < 9 then
+			a = add(a, 1);
+            b = mult(a, 2);
+        endif
+    endwhile
+end

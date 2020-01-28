@@ -1,0 +1,37 @@
+func assign(a)
+	a = 1;
+end
+
+func assignTwo(a, b)
+	a = 2;
+	b = 4;
+end
+
+func assignThree(a, b)
+	a = b;
+end
+
+func assignFour(a, b)
+	a = b;
+	a = 2;
+	b = a;
+end
+
+func assignFive(a, b)
+	b = a;
+	a = 2;
+	a = b;
+end
+
+func assignSix(a, b, c)
+	a = b;
+	b = c;
+	c = 1;
+end
+
+func assignSeven(a, b)
+	var c;
+	c = a;
+	a = b;
+	b = c;
+end

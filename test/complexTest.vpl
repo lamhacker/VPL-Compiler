@@ -1,0 +1,38 @@
+func complexOne(a, b, c)
+    var d, e, f;
+    d = 1;
+    e = add(a, b);
+    if d < 2 then
+        while e >= 3 do
+	    e = min(2, c)
+	endwhile
+    endif
+end
+
+func complexTwo(a, b, c)
+    var d, e, f, g;
+    while a >= 2 do
+        f = mult(c, 3);
+        e = add(a, 1);
+        if f >= 5 then
+            a = div(7, a)
+        endif
+    endwhile
+end
+
+func complexThree(a, b, c)
+    var d, e, f, g;
+    d = add(minus(a, 2), 1);
+    e = (b);
+    if mult(b, 2) >= 7 then
+        if d < 8 then
+            f = min(c, div(a, b));
+            d = a
+        endif;
+        while c < 5 do
+            c = 10
+        endwhile
+    endif
+end
+
+

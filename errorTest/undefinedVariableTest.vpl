@@ -1,0 +1,5 @@
+func undefinedVariableTestOne(a,b,e) 
+    var c,d; 
+    c = add(minus(a, b) ,mult(a, e)); 
+    d = div(a, s)
+end

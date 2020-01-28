@@ -1,0 +1,13 @@
+func complex4(a, b, c, d, e)
+	if a < 100 then
+		while b >= 0 do
+			if c >= 5 then
+				c = minus(c, 1)
+			endif;
+			b = minus(b, 1);
+			if d < 50 then
+				e = d
+			endif
+		endwhile
+	endif
+end

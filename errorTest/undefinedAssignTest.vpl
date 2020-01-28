@@ -1,0 +1,9 @@
+func undefinedAssignTest(a,b)
+    var c,d; 
+    a = c 
+end
+
+func uninitialised(a)
+	var d;
+	d = add(d, d)
+end

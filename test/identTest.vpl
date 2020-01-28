@@ -1,0 +1,21 @@
+func ident1(a, b)
+	if a >= 0 then
+		a = b;
+	endif
+end
+
+func ident2(a, b, c, d, e)
+	if a < 100 then
+		if b < 100 then
+			if c < 100 then
+				if d < 100 then
+					e = d;
+					d = c;
+					c = b;
+					b = a;
+					a = 0;
+				endif
+			endif
+		endif
+	endif
+end

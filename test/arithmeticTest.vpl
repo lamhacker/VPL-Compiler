@@ -1,0 +1,23 @@
+func arith1(a, b, c)
+	c = add(a, b)
+end
+
+func arith2(a, b, c)
+	c = minus(a, b)
+end
+
+func arith3(a, b, c)
+	c = mult(a, b)
+end
+
+func arith4(a, b, c)
+	c = div(a, b)
+end
+
+func arith5(a, b, c)
+	c = min(a, b)
+end
+
+func arith6(a, b, c)
+	c = (add(a, b))
+end

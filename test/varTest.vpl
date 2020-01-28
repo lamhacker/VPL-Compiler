@@ -1,0 +1,11 @@
+func varOne(a, b)
+    var c;
+end
+
+func varTwo(a,b)
+    var c, d;
+end
+
+func varThree(a,b)
+    var c, d, e;
+end

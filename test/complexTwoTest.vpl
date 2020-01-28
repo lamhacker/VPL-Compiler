@@ -1,0 +1,25 @@
+func complexTwo(a, b, c)
+    var d, e, f;
+    if a < 3 then
+        if b >= 4 then
+            d = minus(min(b, a), a);
+            e = add(2.1, 3.5)
+        endif;
+        while d >= 1 do
+            d = minus(d, 1)
+        endwhile;
+        f = add(d, e)
+    endif
+end
+
+func complexThree(a, b, c)
+    var d, e, f;
+    while a >= 3 do
+        d = mult(b, a);
+        a = minus(a, 1)
+    endwhile;
+    if d < 20 then
+		c = 1;
+    endif
+end
+

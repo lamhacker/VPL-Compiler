@@ -1,0 +1,42 @@
+func whileOne(a)
+    while (a) >= 40 do
+        a = minus(a, 1);
+	endwhile
+end
+
+func whileTwo(a)
+    while min(a, 6) >= 20 do
+		  a = minus(a, 1);
+    endwhile
+end
+
+func whileThree(a)
+	while minus(a, 1) >= 2 do
+		a = minus(a, 1);
+	endwhile
+end
+
+func whileFour(a, b)
+	while minus(a, 1) >= 8 do
+		a = minus(a, 1);
+		while mult(b, 1) < 5 do
+			b = add(b, 1);
+		endwhile
+	endwhile
+end
+
+func whileFive(a)
+	while a >= 2 do
+		a = minus(a, 1);
+	endwhile;
+	while a < 8 do
+		a = add(a, 1);
+	endwhile
+end
+
+func whileSix(a)
+	while a < 1000000 do
+		a = add(a, 0.01);
+	endwhile
+end
+

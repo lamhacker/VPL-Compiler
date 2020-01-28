@@ -1,0 +1,23 @@
+func arithOpt1(a)
+	a = add(3, 2)
+end
+
+func arithOpt2(a)
+	a = minus(3, 2)
+end
+
+func arithOpt3(a)
+	a = mult(4, 2)
+end
+
+func arithOpt4(a)
+	a = div(2, 4)
+end
+
+func arithOpt5(a)
+	a = min(2, 4)
+end
+
+func arithOpt6(a)
+	a = div(mult(minus(add(a, 0), 0), 1), 1)
+end

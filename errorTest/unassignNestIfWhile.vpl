@@ -1,0 +1,9 @@
+func unassignNestIfWhileTest(a,b) 
+    var c,d; 
+    if a >= 3 then 
+        c =2 ; 
+        while d >= 2 do 
+            a = 2 
+        endwhile 
+    endif 
+end

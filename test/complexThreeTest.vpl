@@ -1,0 +1,23 @@
+func complexThreeTest(a, b, c)
+    var d, e, f, g;
+        if a >= 1 then
+            d = (min(add(a,b), c))
+        endif;
+        while d < 20 do
+            if a >= 1 then
+                e = d;
+                while c < 10 do
+                    if c >= 9 then
+                        if b < 3 then
+                            d = 0;
+                            g = 9
+                        endif
+                    endif;
+				c = add(c,1)
+                endwhile
+            endif;
+		d = add(d,1)
+        endwhile;
+		a = d
+end
+

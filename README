@@ -1,0 +1,39 @@
+How to run the code:
+	1. Python3 as environment. All antlr environment is built and generated, no need to build again.
+	
+	2. To generate exectuable program: ./compile.sh vpl_file_path
+	For example, a vpl file: ./test/var.vpl
+	Command: ./compile.sh ./test/var.vpl -> ./test/var 
+	
+	For all our tests, we have a ./test/base.c class as general vector operation(allocation, free...). It
+	will be compiled with vpl file together.
+	
+	3. To run program: path_to_executable
+
+Optimization made:
+	1. Simplify operations: eg x = add(add(1, 2), a) -> x = add(3, a); x = add(a, 0) -> x = a
+	2. Remove useless variables. If variable doesn't be used in whole function, it will not be 
+		allocated memory.
+
+Semantic Error Checker:
+	If the code has semantic errors, the terminal will print error message and produce a .s file with the error message according to the type of error it is.
+	
+	There are 6 types of semantic errors checked in this compiler, they are:
+		(1) "Error 1, function redefined"
+        		Description: two functions have same name and same parameters.
+        		Example:     func mymin(a,b,c)end     func mymin(a,b,c)end
+		(2) "Error 2, parameter redefined"
+        		Description: a function has more than one duplicated parameter names
+        		Example:     func mymin(a,a)end
+		(3) "Error 3, variable redefined"
+        		Description: a function has more than one duplicated variable name
+        		Example:     func mymin(a,b) var c,c;end
+		(4) "Error 4, variable and function argument have the same name"
+        		Description: A variable and a function argument with the same name
+        		Example:     func mymin(a,b) var a;end
+		(5) "Error 5, variable undefined"
+        		Description: variable undefined
+        		Example:     func mymin(a,b) var a; d = 2 end
+		(6) "Error 6, assign to a variable that does not have value"
+        		Description: assign to a variable that does not have value
+        		Example:     func mymin(a,b) var c; a = c end
